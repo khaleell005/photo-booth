@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4682b4; /* Blue background for the webpage */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+.booth {
+    margin: 20px 0;
+}
+
+#video {
+    width: 400px;
+    height: 300px;
+    border: 2px solid #333;
+    border-radius: 5px;
+}
+
+.options {
+    margin: 10px 0;
+}
+
+#stickerSelect, #stripColor, #applyOptions {
+    margin: 5px;
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.photo-strip {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.photo-strip img {
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    position: relative;
+}
+
+.controls {
+    margin-top: 20px;
+}

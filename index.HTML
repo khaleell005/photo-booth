@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Booth</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Photo Booth</h1>
+        <div class="booth">
+            <video id="video" autoplay></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+            <div class="options">
+                <select id="stickerSelect">
+                    <option value="">Select a Sticker</option>
+                    <option value="heart">Heart</option>
+                    <option value="star">Star</option>
+                    <option value="cat">Cat</option>
+                </select>
+                <input type="color" id="stripColor" value="#e6f3ff">
+                <button id="applyOptions">Apply Options</button>
+            </div>
+            <button id="snap">Take Photo</button>
+        </div>
+        <div class="photo-strip" id="photoStrip">
+            <!-- Photos will be appended here -->
+        </div>
+        <div class="controls" id="controls" style="display: none;">
+            <button id="download">Download Strip</button>
+            <button id="retake">Take Another Set</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
